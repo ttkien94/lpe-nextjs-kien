@@ -1,6 +1,6 @@
 // Đường dẫn server
-// export const API_ENDPOINT = "https://be-lpe.herokuapp.com/api";
-export const API_ENDPOINT = "http://localhost:8000/api";
+export const API_ENDPOINT = "https://be-lpe.herokuapp.com/api";
+// export const API_ENDPOINT = "http://localhost:8000/api";
 
 // Auth
 export const LOGIN = "/auth/sign-in";
