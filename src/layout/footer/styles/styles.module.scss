@@ -1,0 +1,53 @@
+@import "public/styles/app.scss";
+
+.wrapperFooter {
+  background: $blue-2;
+  padding: 70px 0;
+
+  color: $white-0;
+  .heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .heading2 {
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.itemMenu {
+  font-size: 15px;
+  margin-bottom: 10px;
+
+  &:hover {
+    background: unset !important;
+  }
+}
+.itemMenu a {
+  transition: color 0.3s;
+  color: $white-0;
+
+  &:hover {
+    color: $blue-0 !important;
+  }
+}
+
+.wrapperInfo {
+  background: $black-0;
+  color: $white-0;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapperFooter {
+    padding: 50px 0;
+  }
+}

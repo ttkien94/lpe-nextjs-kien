@@ -1,0 +1,165 @@
+$border-color: #dee1f3;
+$border-radius: 10px;
+
+.courseBox {
+  position: -webkit-sticky;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 4px 4px 16px 0 rgb(66 165 245 / 30%);
+  }
+}
+
+.introVideo {
+  position: relative;
+  border-radius: $border-radius;
+  margin-bottom: 30px;
+  display: none;
+
+  .courseVideoOverlay {
+    border-radius: $border-radius;
+  }
+}
+
+.courseBoxVideo {
+  position: relative;
+
+  img {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+}
+
+.playButton {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.courseVideoOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.courseBoxText {
+  padding: 15px 30px 30px;
+  text-align: center;
+  border-right: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+.coursePrice {
+  color: rgb(4, 206, 158);
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.wrapperInclude {
+  text-align: center;
+  margin-top: 20px;
+}
+.includeHeading {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+.includeItem {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  i {
+    font-size: 14px;
+    width: 14px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.smallScreenContent {
+  display: none;
+}
+
+.content {
+  .contentHeading {
+    font-weight: bold;
+  }
+
+  .contentDescription {
+    margin: 20px 0;
+  }
+
+  .contentAuthor {
+    margin: 10px 0;
+
+    a {
+      color: #3777bc;
+    }
+  }
+}
+
+.benefitHeading,
+.headingContent {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.wrapperLession {
+  margin-top: 15px;
+}
+
+.lessionItem {
+  color: #495057;
+  padding: 10px 40px;
+}
+
+.benefitContent {
+  margin: 30px 0;
+
+  .benefitItem {
+    margin-top: 20px;
+    i {
+      color: #3777bc;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .smallScreenContent {
+    display: block;
+  }
+  .introVideo {
+    display: block;
+  }
+  .lessionItem {
+    padding: 10px 20px;
+  }
+}

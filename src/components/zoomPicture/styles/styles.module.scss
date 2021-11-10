@@ -1,0 +1,14 @@
+.zoomPic {
+  width: inherit;
+  background-repeat: no-repeat;
+}
+
+.zoomPic:hover img {
+  opacity: 0;
+}
+
+.zoomImg {
+  display: block;
+  width: 100%;
+  pointer-events: none;
+}

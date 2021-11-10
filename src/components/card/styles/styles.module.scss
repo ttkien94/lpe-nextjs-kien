@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.imageCard {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.textCard {
+  width: 80%;
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.darkLayout {
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  border-radius: 10px !important;
+  transition: all 0.3s;
+}
+
+.container:hover .darkLayout {
+  border-radius: 10px;
+  opacity: 0.75;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .imageCard {
+    height: 145px;
+  }
+}

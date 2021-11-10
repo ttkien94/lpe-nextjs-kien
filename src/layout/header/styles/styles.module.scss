@@ -1,0 +1,152 @@
+@import "public/styles/app.scss";
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 5px;
+  background-color: $white-0;
+  color: $black-0;
+}
+
+.imgLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.searchIcon,
+.cartIcon {
+  cursor: pointer;
+  width: 2em !important;
+  height: 2em !important;
+  padding: 6px;
+  transition: all 0.5s;
+  color: $black-0;
+
+  margin-right: 10px;
+  &:hover {
+    color: $blue-1;
+  }
+}
+
+.appLeftLg {
+  display: flex;
+  align-items: center;
+}
+
+.appLeftSm {
+  display: none;
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.dropdown li {
+  position: relative;
+  margin-right: 10px;
+}
+
+.dropdown li a {
+  color: $black-0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.dropdown li ul {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  line-height: normal;
+  background-color: $black-0;
+  min-width: 160px;
+  transition: all 0.3s;
+}
+
+.dropdown li ul li a {
+  text-align: left;
+  color: $white-0;
+  font-size: 14px;
+  padding: 15px;
+  display: block;
+  white-space: nowrap;
+  word-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.dropdown li ul li a:hover {
+  background-color: $black-0;
+  color: $blue-1 !important;
+}
+
+.dropdown li ul li ul {
+  left: 100%;
+  top: 0;
+  transition: all 0.6s;
+}
+
+.popOver {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentTranslation {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.contentTranslationPopover {
+  a {
+    width: 50px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #adb5bd;
+    }
+  }
+}
+
+@media screen and (max-width: 1082px) {
+  .dropdown {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown {
+    display: none;
+  }
+  .appLeftLg {
+    display: none !important;
+  }
+  .appLeftSm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}

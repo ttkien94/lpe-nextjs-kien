@@ -1,0 +1,32 @@
+.inStockCSS {
+  padding: 4px 10px;
+
+  color: rgb(34, 154, 22);
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgba(84, 214, 44, 0.16);
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.outOfStockCSS {
+  padding: 4px 10px;
+
+  color: rgb(183, 33, 54);
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgba(183, 33, 54, 0.16);
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.lowStockCSS {
+  padding: 4px 10px;
+
+  color: rgb(255, 193, 7);
+  font-size: 14px;
+  font-weight: 700;
+  background-color: rgba(255, 193, 7, 0.16);
+  display: inline-block;
+  border-radius: 20px;
+}

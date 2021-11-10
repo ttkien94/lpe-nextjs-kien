@@ -1,0 +1,19 @@
+@import "public/styles/app.scss";
+
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+}
+
+.description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}

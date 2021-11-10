@@ -1,0 +1,400 @@
+@import "public/styles/app.scss";
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.contentText {
+  width: 50%;
+  margin: 50px auto 20px;
+
+  p {
+    font-size: 16px;
+    line-height: 1.63;
+    font-size: 15px;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+}
+
+.paper {
+  width: 180px;
+  height: 50px;
+  background-color: #7e7e7e !important;
+  margin: 15px 0;
+}
+.titleText {
+  font-size: 20px;
+  color: #7e7e7e;
+}
+
+@media screen and (max-width: 768px) {
+  .parentDiv {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contentText {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentCarousel {
+    h2 {
+      font-size: 90px;
+    }
+
+    p {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contentCarousel {
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 12px;
+      letter-spacing: 1rem;
+    }
+  }
+}
+
+.containerVideo {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+figure.snip1192 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
+}
+
+figure.snip1192 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+figure.snip1192 img {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+
+figure.snip1192 blockquote {
+  margin: 0;
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 30px 50px 65px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  margin: 0 0 -50px;
+  line-height: 1.6em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1192 blockquote:before,
+figure.snip1192 blockquote:after {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1192 blockquote:before {
+  top: 35px;
+  left: 20px;
+}
+figure.snip1192 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 35px;
+}
+figure.snip1192 .author {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+figure.snip1192 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+}
+figure.snip1192 .author h5 span {
+  text-transform: none;
+  display: block;
+}
+
+//section
+.join {
+  padding-top: 50px;
+  .titleText {
+    color: $blue-1;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .parentDiv {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    p {
+      &:nth-child(1) {
+        color: black;
+        text-align: justify;
+      }
+    }
+    .joinPrince {
+      color: $blue-1;
+      font-size: 22px;
+    }
+    button {
+      background-color: $blue-1;
+
+      p:nth-child(1) {
+        border: 1px solid white;
+        font-weight: normal;
+        border-radius: 20px;
+        padding: 2px 5px;
+        color: white;
+      }
+    }
+  }
+  .contentText {
+    p {
+      $border: 3px;
+      position: relative;
+      padding: 10px;
+      border: $border solid transparent;
+      background: $white-0;
+      background-clip: padding-box;
+      // border-radius: 1em;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -$border;
+        // border-radius: inherit;
+        background: linear-gradient(to right, #3870a9, #daecee);
+      }
+    }
+  }
+}
+
+.introduceTrainer {
+  background-color: $white-0;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.upcomingEvent {
+  padding: 48px 0;
+}
+
+.feedBack {
+  .snip1192 {
+    blockquote {
+      background-color: $gray-4;
+      color: $black-text;
+      font-size: 14px;
+    }
+  }
+}
+
+.testPsy {
+  padding-top: 48px;
+}
+
+.btnStarter {
+  background-color: $blue-1;
+  border: none;
+  color: $white-0 !important;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 600;
+}
+
+.wrapperStarted {
+  text-align: center;
+  background: $gray-4;
+  padding: 80px 0;
+  color: $black-text;
+
+  h3 {
+    font-weight: 600;
+  }
+  p {
+    margin: 20px 0;
+  }
+}
+
+.introduceTrainer {
+  position: relative;
+
+  ul {
+    bottom: -50px !important;
+
+    li {
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        position: relative;
+
+        &::before {
+          color: $blue-1 !important;
+          font-size: 12px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+.event {
+  position: relative;
+
+  ul {
+    bottom: -50px !important;
+
+    li {
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        position: relative;
+
+        &::before {
+          color: $blue-1 !important;
+          font-size: 12px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+.videoTestimonials {
+  text-align: center;
+  background: $gray-2;
+  padding: 100px 0;
+  margin-bottom: 50px;
+  cursor: grab;
+
+  position: relative;
+
+  ul {
+    bottom: -50px !important;
+
+    li {
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        position: relative;
+
+        &::before {
+          color: $blue-2 !important;
+          font-size: 12px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

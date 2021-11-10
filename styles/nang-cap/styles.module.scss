@@ -1,0 +1,117 @@
+.bgUpgrade {
+  background-image: url("../../public/images/bg-upgrade.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    width: 70%;
+    color: white;
+    text-align: center;
+  }
+}
+
+.wrapperUpgrade {
+  width: 80vw;
+  text-align: center;
+  background-color: #fff;
+
+  .contentUpgrade {
+    margin: 30px 0;
+    h2 {
+      font-size: 35px;
+      color: #273167;
+    }
+
+    p {
+      width: 70%;
+      font-size: 20px;
+      margin: 20px auto;
+    }
+  }
+}
+
+.upgradeItem {
+  background-color: #f6f7fb;
+  box-shadow: rgb(153 196 227 / 25%) 0px 4px 5px;
+  border-radius: 20px;
+  padding: 20px;
+
+  h3 {
+    color: #273167;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px !important;
+    width: 100% !important;
+    text-align: left;
+    margin: 0 !important;
+  }
+
+  i {
+    font-size: 50px;
+    padding: 30px;
+    color: #5fafff;
+  }
+}
+
+.formUpgrade {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.tagPrice {
+  p {
+    color: rgb(4, 206, 158);
+    font-weight: bold;
+    font-size: 30px !important;
+  }
+}
+
+.confirmBtn {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapperUpgrade {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bgUpgrade {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .contentUpgrade {
+    h2 {
+      font-size: 25px !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+
+  .upgradeItem {
+    padding: 10px;
+    margin-bottom: 30px;
+    p {
+      font-size: 14px !important;
+    }
+
+    i {
+      font-size: 36px;
+    }
+  }
+}

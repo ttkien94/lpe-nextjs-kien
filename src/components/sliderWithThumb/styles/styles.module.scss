@@ -1,0 +1,35 @@
+.bigPic {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .bigPic {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bigPic {
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bigPic {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bigPic {
+    width: 100%;
+    height: 400px;
+  }
+}

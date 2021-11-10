@@ -1,0 +1,91 @@
+.bannerVas {
+  height: 500px;
+  background-image: url("https://lpe.vn/storage/gioi-thieu/mr-vas/mrvas-1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw !important;
+  margin-bottom: 50px;
+}
+
+.bannerText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+
+  h1 {
+    font-family: "tungsten";
+    font-size: 80px !important;
+    letter-spacing: 0.6rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .buttonPlay {
+    border: 2px solid #fff;
+    font-size: 26px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bannerText {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+.introText {
+  &Birth,
+  &From,
+  &Role {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+.vasCanDo {
+  margin: 50px 0;
+}
+
+.bannerBottomVas {
+  height: 500px;
+  background-image: url("https://lpe.vn/storage/gioi-thieu/mr-vas/mrvas-1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw !important;
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+
+  .bannerBottomText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    p {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.introTestDesc {
+  margin-top: 5px;
+}

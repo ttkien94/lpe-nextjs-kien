@@ -1,0 +1,64 @@
+@import "public/styles/app.scss";
+
+.wrapperEvent {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.dateEvent {
+  display: flex;
+  flex-direction: column;
+
+  .line {
+    width: 40px;
+    height: 8px;
+    background-color: $blue-1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &_month {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &_day {
+    font-weight: 600;
+    font-size: 35px;
+  }
+}
+
+.contentTitle {
+  text-transform: uppercase;
+  color: $blue-1;
+}
+
+.contentDay {
+  color: $blue-1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btnEvent {
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: $blue-1;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+}
+
+.descriptionEvent {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    text-align: center;
+  }
+}

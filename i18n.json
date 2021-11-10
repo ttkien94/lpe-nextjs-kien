@@ -1,0 +1,16 @@
+{
+  "locales": ["vn", "en"],
+  "defaultLocale": "vn",
+  "localeDetection": false,
+  "pages": {
+    "*": ["common"],
+    "/": ["home"],
+    "/lpe/mr-vas": ["aboutVas"],
+    "/lpe/ms-la-ha-giang-thanh": ["giangThanh"],
+    "/lpe/tuyen-dung": ["recruitment"],
+    "/chuong-trinh-huan-luyen": ["trainingProgram"],
+    "/dang-nhap": ["login"],
+    "/lpe/noi-quy-quy-dinh": ["rules"],
+    "/lpe/tam-nhin-su-menh-lpe": ["vision"]
+  }
+}

@@ -1,0 +1,24 @@
+.imgLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.imgBorder {
+  border-radius: 50% !important;
+}
+
+.imgLinkSide {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.loginText {
+  transition: all 0.3s;
+
+  // &:hover {
+  //   color: $blue-1 !important;
+  // }
+}
