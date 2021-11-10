@@ -201,9 +201,10 @@ function Home() {
 
           <div className="container">
             <div className="row">
-              {menu?.map((card, index) => {
-                return <Card content={card} key={index} />;
-              })}
+              {menu &&
+                menu?.map((card, index) => {
+                  return <Card content={card} key={index} />;
+                })}
             </div>
           </div>
         </section>
